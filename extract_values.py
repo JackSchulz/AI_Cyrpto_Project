@@ -11,7 +11,7 @@ def extract_values(file):
     f=open(file,'r')
     for line in f:
         line=line.rstrip().split(',')
-        values.append(line[1])
+        values.append(float(line[1]))
     return values
 
 
