@@ -34,7 +34,7 @@ def extract_data(file):
     #print(data[1])  
     #print(len(data))
     
-    
+    ### now for 30 days (43200 min)
     
     selected_data=[]
 
@@ -44,7 +44,7 @@ def extract_data(file):
     selected_data.append(symbol)
 
 
-    for i in range(1,259200,2):
+    for i in range(1,43200,2):
         # chosen price is average of open and close
 
         avg=(float(data[i][3])+float(data[i][6]))/2
